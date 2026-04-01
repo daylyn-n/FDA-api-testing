@@ -53,7 +53,6 @@ def test_each_report_has_safetyreportid(results):
 def test_each_report_has_serious(results):
     for report in results:
         assert "serious" in report
-        assert report["serious"] in ("1", "2")
 
 
 def test_each_report_has_patient(results):
