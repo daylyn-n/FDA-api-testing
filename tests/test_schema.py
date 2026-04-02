@@ -1,19 +1,4 @@
-import json
 import pytest
-
-SNAPSHOT_PATH = "data/sample_responses.json"
-
-
-@pytest.fixture(scope="module")
-def snapshot() -> dict:
-    with open(SNAPSHOT_PATH) as f:
-        return json.load(f)
-
-
-@pytest.fixture(scope="module")
-def results(snapshot):
-    return snapshot["results"]
-
 
 # --- Top-level structure ---
 
