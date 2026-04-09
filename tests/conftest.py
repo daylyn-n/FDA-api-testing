@@ -1,9 +1,20 @@
+"""
+Purpose: Create pytest fixtures to reuse throughout all the
+test_*.py files. 
+
+Load the snapshot data to test on
+Extract the ["results"] to test on the quality of data
+Extract the actual API to test if the sample quality is the same
+as the live API
+"""
+
 import json
 import pytest
 import requests
 
 SNAPSHOT_PATH = "data/sample_responses.json"
 API_URL = "https://api.fda.gov/drug/event.json?limit=5"
+
 
 
 @pytest.fixture(scope="module")
