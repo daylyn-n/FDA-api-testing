@@ -6,6 +6,9 @@ Load the snapshot data to test on
 Extract the ["results"] to test on the quality of data
 Extract the actual API to test if the sample quality is the same
 as the live API
+
+snapshot: dict[str, Any]
+snapshot["results"]: list[dict[str, Any]]
 """
 
 import json
