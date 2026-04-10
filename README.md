@@ -21,3 +21,8 @@ pytest tests/
 ```
 
 Requires an internet connection (tests hit the live API).
+
+
+## Resources
+- https://open.fda.gov/apis/drug/event/searchable-fields/
+- https://open.fda.gov/apis/try-the-api/
